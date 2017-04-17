@@ -13,3 +13,4 @@ prod => (current build on heroku)
 1. npm run build;
 2. npm run start;
 3. run on heroku url.
+https://nextjstry.herokuapp.com/
