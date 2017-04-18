@@ -12,8 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "next": "^2.1.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3",
+    "tls": "^0.0.1"
   }
 }
