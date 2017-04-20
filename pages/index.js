@@ -28,7 +28,7 @@ export default class MyPage extends React.Component {
     this.myTextInput.value = '';
   }
   render () {
-    var {username} = this.state;
+    var username = this.state.username||'anonymous';
     var msgs = this.state.msgs || [];
     var content = msgs.map(function(item, i){
       return (
