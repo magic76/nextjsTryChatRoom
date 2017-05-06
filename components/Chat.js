@@ -10,8 +10,8 @@ export default class MyPage extends React.Component {
       this.clickevent = this.clickevent.bind(this)
   }
   componentDidMount() {
-      // var username = window.prompt('input user name:');
-      var username = 'user001';
+      var username = window.prompt('input user name:');
+      // var username = 'user001';
       this.setState({username: username});
       // this.username = username;
       var socket = socketio(socketiohost);
