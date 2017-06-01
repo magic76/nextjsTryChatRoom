@@ -1,5 +1,5 @@
 # nextjstry
-
+use nextjs and socketio to buile a simple chat room, and deploy on heroku.
 
 dev =>
 
