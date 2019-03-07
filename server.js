@@ -420,4 +420,4 @@ app.use(async ctx => {
     ctx.body = getBody(Math.floor(Date.now()/100 % 1000), isBallRunning ? 0 : 1);
   });
   
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
