@@ -8,10 +8,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7f6738cdf929752ede2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -28,7 +28,7 @@ const getBody = (odds, cron_status) => ({
         "headname": "grg",
         "max_bet": 5000,
         "min_bet": 500,
-        "cron_status": cron_status,
+        "cron_status": 1,
         "DisplayMsg": "",
         "maxLiabilityPerBet": 1000,
         "max_profit": 10000,
@@ -42,10 +42,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7a67df9sss29752ede2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -62,7 +62,7 @@ const getBody = (odds, cron_status) => ({
         "headname": "taaaest2",
         "max_bet": 5000,
         "min_bet": 500,
-        "cron_status": cron_status,
+        "cron_status": 1,
         "DisplayMsg": "",
         "maxLiabilityPerBet": 1000,
         "max_profit": 10000,
@@ -246,10 +246,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7f67df9sss2975123a2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -280,10 +280,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7f67df9sss2dsaw123a2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -314,10 +314,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7f67dasd1ss2975123a2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -334,7 +334,7 @@ const getBody = (odds, cron_status) => ({
         "headname": "tes12312t2",
         "max_bet": 5000,
         "min_bet": 500,
-        "cron_status": cron_status,
+        "cron_status": 1,
         "DisplayMsg": "",
         "maxLiabilityPerBet": 1000,
         "max_profit": 10000,
@@ -348,10 +348,10 @@ const getBody = (odds, cron_status) => ({
         "_id": "5c7f6asd12ss2975123a2d78",
         "fancyData": [
           {
-            "cron_status": cron_status,
+            "cron_status": 1,
             "NoValume": 100,
             "YesValume": 100,
-            "SessInptYes": odds,
+            "SessInptYes": 1,
             "SessInptNo": 1,
             "DisplayMsg": ""
           }
@@ -368,7 +368,7 @@ const getBody = (odds, cron_status) => ({
         "headname": "testasdasd2",
         "max_bet": 5000,
         "min_bet": 500,
-        "cron_status": cron_status,
+        "cron_status": 1,
         "DisplayMsg": "",
         "maxLiabilityPerBet": 1000,
         "max_profit": 10000,
@@ -433,7 +433,6 @@ app.use(async ctx => {
             elm.map(_ => nodes.append(_));
             document.body.innerText = '';
             document.body.append(nodes);
-            
         })
         var go = setInterval(run, 100);
             </script></body></html>`)
