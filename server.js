@@ -441,9 +441,9 @@ app.use(async ctx => {
     } else {
         isBallRunning = !isBallRunning;
         !time && (time = new Date());
-        if (new Date() - time > 1000 * 1) {
+        // if (new Date() - time > 1000 * 1) {
             time = new Date()
-        }
+        // }
         ctx.body = getBody(`${time.getSeconds()}${Math.floor(time.getMilliseconds()/100)}`, isBallRunning ? 0 : 1);
     }
 });
