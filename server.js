@@ -415,9 +415,37 @@ const getBody = (odds, cron_status) => ({
     ]
   })
 let isBallRunning = false;
+let time;
 app.use(async ctx => {
-    isBallRunning = !isBallRunning;
-    ctx.body = getBody(Math.floor(Date.now()/100 % 1000), isBallRunning ? 0 : 1);
-  });
+    
+    if (ctx.originalUrl === '/ping') {
+        ctx.res.writeHead(200)
+        ctx.res.write(`<html><body><script>
+        
+        var run = () => fetch('/').then(a => a.json()).then(d=>{
+
+            var elm = d.data.map(_ => {
+            var node = document.createElement('div');
+            node.innerText = _.fancyData[0].SessInptYes + '    ' + _.fancyData[0].cron_status;
+            return node;
+            })
+            var nodes = document.createElement('div');
+            elm.map(_ => nodes.append(_));
+            document.body.innerText = '';
+            document.body.append(nodes);
+            
+        })
+        var go = setInterval(run, 100);
+            </script></body></html>`)
+        ctx.res.end()
+    } else {
+        isBallRunning = !isBallRunning;
+        !time && (time = new Date());
+        if (new Date() - time > 1000 * 1) {
+            time = new Date()
+        }
+        ctx.body = getBody(`${time.getSeconds()}${Math.floor(time.getMilliseconds()/100)}`, isBallRunning ? 0 : 1);
+    }
+});
   
 app.listen(process.env.PORT || 3000);
