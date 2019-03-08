@@ -709,6 +709,17 @@ app.use(async ctx => {
         var go = setInterval(run, 100);
             </script></body></html>`)
         ctx.res.end()
+    } else if (ctx.originalUrl.indexOf('/sleep') > -1) {
+        const second = Number(ctx.originalUrl.replace('/sleep', ''));
+        const sleep = () => new Promise(res => {
+          setTimeout(() => {
+            console.log('sdfd')
+            res();
+          }, (second || 1) * 1000)
+        })
+        await sleep();
+        ctx.body = { success: true };
+        ctx.res.end()
     } else {
         isBallRunning = !isBallRunning;
         !time && (time = new Date());
