@@ -103,7 +103,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -137,7 +137,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -171,7 +171,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -205,7 +205,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -239,7 +239,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -307,7 +307,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
@@ -409,7 +409,7 @@ const getBody = (odds, cron_status) => ({
         "bet_delay": 0,
         "result": null,
         "createdAt": "2019-03-06T11:52:48.089Z",
-        "updatedAt": "2019-03-06T11:52:48.089Z",
+        "updatedAt": odds,
         "__v": 0
       },
       {
