@@ -144,8 +144,8 @@ let data = [
     "fancyData": [
       {
         "cron_status": 1,
-        "NoValume": 100,
-        "YesValume": 100,
+        "NoValume": 80,
+        "YesValume": 80,
         "SessInptYes": 1,
         "SessInptNo": 1,
         "DisplayMsg": ""
