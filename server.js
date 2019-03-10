@@ -143,11 +143,11 @@ let data = [
     "_id": "5c7f67df9sss29fdsefdsew78",
     "fancyData": [
       {
-        "cron_status": 0,
+        "cron_status": 1,
         "NoValume": 90,
         "YesValume": 90,
-        "SessInptYes": 1,
-        "SessInptNo": 1,
+        "SessInptYes": 2,
+        "SessInptNo": 3,
         "DisplayMsg": ""
       }
     ],
