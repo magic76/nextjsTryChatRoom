@@ -180,10 +180,10 @@ app.use(async ctx => {
           }, (second || 1) * 1000)
         })
         await sleep();
-        ctx.body = { success: true };
-        ctx.res.end()
+        ctx.body = { message: 'api response delay for ' + second + ' second.' };
     } else if (ctx.originalUrl.indexOf('/add') > -1) {
         data.push(mockItem(Date.now()));
+        ctx.body = { message: 'market added success' };
     } else {
         isBallRunning = !isBallRunning;
         !time && (time = new Date());
