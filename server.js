@@ -256,6 +256,7 @@ app.use(async ctx => {
         ctx.body = { message: 'market added success' };
     } else if (ctx.originalUrl.indexOf('/close') > -1) {
         data[data.length-1].result = 1;
+        ctx.body = data[data.length-1];
     } else {
         isBallRunning = !isBallRunning;
         !time && (time = new Date());
