@@ -258,12 +258,23 @@ app.use(async ctx => {
         data[data.length-1].result = 1;
         ctx.body = data[data.length-1];
     } else {
+        const [empty, action, eventId, marketId, name] = ctx.originalUrl.split('/')
         isBallRunning = !isBallRunning;
         !time && (time = new Date());
         // if (new Date() - time > 1000 * 1) {
             time = new Date()
         // }
-        ctx.body = getBody(`${time.getSeconds()}${Math.floor(time.getMilliseconds()/100)}`, isBallRunning ? 0 : 1);
+        let newData = getBody(`${time.getSeconds()}${Math.floor(time.getMilliseconds()/100)}`, isBallRunning ? 0 : 1);
+        if ([action, eventId, marketId, name].every(_ => _)) {
+          newData = {...newData, data: newData.data.map((_, i) => {
+            _._id = `${eventId}_${marketId}_${i}`;
+            _.match_id = Number(eventId);
+            _.match_market_id = marketId;
+            _.headname = `${name}_${i}`;
+            return _;
+          })}
+        }
+        ctx.body = newData;
     }
 });
   
