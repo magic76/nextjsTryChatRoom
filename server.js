@@ -208,12 +208,12 @@ let data = [
     "__v": 0
   },
 ];
+data = data.concat(filedata);
 const getBody = (odds, cron_status) => {
   data[2].fancyData[0].cron_status = cron_status;
   data[2].fancyData[0].SessInptYes = odds;
   data[2].cron_status = cron_status;
   console.log(data[2]);
-  data = data.concat(filedata);
   return {
     "status": 200,
     "data": data,
