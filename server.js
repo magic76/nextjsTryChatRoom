@@ -214,6 +214,9 @@ const getBody = (odds, cron_status) => {
   const modifyarry = [2,3,4,5,6,7];
   
   modifyarry.map(_ => {
+    if (!data[_]){
+      return ;
+    }
     data[_].fancyData[0].cron_status = cron_status;
     data[_].fancyData[0].SessInptYes = odds;
     data[_].cron_status = cron_status;
