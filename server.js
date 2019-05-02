@@ -22,7 +22,7 @@ const mockItem = (time) => ({
   "match_id": 29253487,
   "title": "Mumbai Indians v Sunrisers Hyderabad",
   "match_market_id": "1.158149277",
-  "headname": "TEST0" + time,
+  "headname": "PAULLOVETOOMY" + time,
   "max_bet": 5000,
   "min_bet": 500,
   "cron_status": 1,
@@ -57,7 +57,7 @@ let data = [
     "match_id": 29253487,
     "title": "Mumbai Indians v Sunrisers Hyderabad",
     "match_market_id": "1.158149277",
-    "headname": "TEST0009",
+    "headname": "PAULLOVETOOMY4234",
     "max_bet": 5000,
     "min_bet": 500,
     "cron_status": 1,
@@ -91,7 +91,7 @@ let data = [
     "match_id": 29253487,
     "title": "Mumbai Indians v Sunrisers Hyderabad",
     "match_market_id": "1.158149277",
-    "headname": "TEST00011",
+    "headname": "PAULLOVETOOMY44",
     "max_bet": 5000,
     "min_bet": 500,
     "cron_status": 1,
@@ -125,7 +125,7 @@ let data = [
     "match_id": 29253487,
     "title": "Mumbai Indians v Sunrisers Hyderabad",
     "match_market_id": "1.158149277",
-    "headname": "TEST00010",
+    "headname": "PAULLOVETOOMY2",
     "max_bet": 5000,
     "min_bet": 500,
     "cron_status": 1,
@@ -160,7 +160,7 @@ let data = [
     "match_id": 29253487,
     "title": "Mumbai Indians v Sunrisers Hyderabad",
     "match_market_id": "1.158149277",
-    "headname": "TEST999",
+    "headname": "PAULLOVETOOMY1",
     "max_bet": 5000,
     "min_bet": 500,
     "cron_status": 1,
@@ -194,7 +194,7 @@ let data = [
     "match_id": 29253487,
     "title": "Mumbai Indians v Sunrisers Hyderabad",
     "match_market_id": "1.158149277",
-    "headname": "TEST888",
+    "headname": "PAULLOVETOOMY",
     "max_bet": 5000,
     "min_bet": 500,
     "cron_status": 1,
@@ -210,10 +210,13 @@ let data = [
 ];
 data = data.concat(filedata);
 const getBody = (odds, cron_status) => {
-  data[2].fancyData[0].cron_status = cron_status;
-  data[2].fancyData[0].SessInptYes = odds;
-  data[2].cron_status = cron_status;
-  console.log(data[2]);
+  const modifyarry = [2,3,4,5,6,7];
+  
+  modifyarry.map(_ => {
+    data[_].fancyData[0].cron_status = cron_status;
+    data[_].fancyData[0].SessInptYes = odds;
+    data[_].cron_status = cron_status;
+  })
   return {
     "status": 200,
     "data": data,
