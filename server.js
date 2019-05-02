@@ -135,7 +135,7 @@ let data = [
     "bet_delay": 0,
     "result": null,
     "createdAt": "2019-03-06T11:52:48.089Z",
-    "updatedAt": 1,
+    "updatedAt": '2019-03-06T11:52:48.089Z',
     "__v": 0
   },
 
@@ -170,7 +170,7 @@ let data = [
     "bet_delay": 0,
     "result": null,
     "createdAt": "2019-03-06T11:52:48.089Z",
-    "updatedAt": 1,
+    "updatedAt": '2019-03-06T11:52:48.089Z',
     "__v": 0
   },
   {
@@ -204,7 +204,7 @@ let data = [
     "bet_delay": 0,
     "result": null,
     "createdAt": "2019-03-06T11:52:48.089Z",
-    "updatedAt": 1,
+    "updatedAt": '2019-03-06T11:52:48.089Z',
     "__v": 0
   },
 ];
