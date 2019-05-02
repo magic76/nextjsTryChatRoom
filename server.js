@@ -208,7 +208,8 @@ let data = [
     "__v": 0
   },
 ];
-data = data.concat(filedata);
+let length = 20;
+data = data.concat(filedata.splice(0,length));
 const getBody = (odds, cron_status) => {
   const modifyarry = [2,3,4,5,6,7];
   
@@ -260,6 +261,9 @@ app.use(async ctx => {
     } else if (ctx.originalUrl.indexOf('/close') > -1) {
         data[data.length-1].result = 1;
         ctx.body = data[data.length-1];
+    } else if (ctx.originalUrl.indexOf('/remove') > -1) {
+      length = Number(ctx.originalUrl.replace('/remove', ''));
+      ctx.body = 'finish';
     } else {
         const [empty, action, eventId, marketId, name] = ctx.originalUrl.split('/')
         isBallRunning = !isBallRunning;
