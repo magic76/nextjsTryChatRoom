@@ -220,7 +220,7 @@ const getBody = (odds, cron_status) => {
     data[_].fancyData[0].cron_status = cron_status;
     data[_].fancyData[0].SessInptYes = odds;
     data[_].cron_status = cron_status;
-    data[_].updatedAt = Date.now().toString();
+    // data[_].updatedAt = Date.now().toString();
   })
   return {
     "status": 200,
