@@ -209,7 +209,7 @@ let data = [
   },
 ];
 let length = 20;
-// data = data.concat(filedata.splice(0,length));
+data = data.concat(filedata);
 const getBody = (odds, cron_status) => {
   const modifyarry = [2,3,4,5,6,7];
   
